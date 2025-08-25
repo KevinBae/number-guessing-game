@@ -14,12 +14,13 @@ while True:
     print("I'm thinking of a number between 1 and 25")
 
     while guess_count < guess_limit:
+        
         guess_text = input("Take a guess: ")
         try:
             guess = int(guess_text)
         except ValueError:
             print("Please enter a number. That didn’t count as an attempt.")
-        continue
+            continue
 
         guess_count += 1
 
